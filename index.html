@@ -5,12 +5,12 @@
   <title>Africars Rent</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon-->
-  <link rel="icon" type="image/png" href="/img/favicon_io/favicon-192x192.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/img/favicon_io/favicon.svg" />
-  <link rel="shortcut icon" href="/img/favicon_io/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="/static/favicon_io/favicon-192x192.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/static/favicon_io/favicon.svg"/>
+  <link rel="shortcut icon" href="/static/favicon_io/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="BIIG" />
-  <link rel="manifest" href="/img/favicon_io/site.webmanifest" />
+  <link rel="manifest" href="/static/favicon_io/site.webmanifest" />
   <!-- Links de Fuentes y Awesome Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- CSS personalizado -->
   <link rel="stylesheet" href="assets/css/home.css">
@@ -32,26 +32,58 @@
 <!-- Seccion de Inicio -->
    <header class="bg-[#00a990] fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
-      <img src="/static/logos/LOGO AFRICARS.svg" alt="Tambor Logo" style="max-height:60px" />
-      <nav class="space-x-4 ">
-        
-      </nav>
+        <img src="/static/logos/LOGO AFRICARS.svg" alt="Tambor Logo" style="max-height:60px"/>
+        <nav class="flex-1 flex justify-end items-center space-x-4">
+            <h2 class="text-white font-semibold text-base md:text-lg lg:text-xl text-right leading-tight">
+                Tenerife: +34 605 335 571<br>Fuerteventura: +34 651 941 499
+            </h2>
+        </nav>
     </div>
   </header>
 
-<section class="bg-gray-300 grid grid-cols-2" >
+<section class="bg-gray-50 grid grid-cols-2" >
     <div class="flex flex-col justify-center items-start py-16">
         <h2 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pt-16 pl-4">Alquiler de Coches en </h2> 
         <h2 class="lg:text-6xl md:text-4xl sm:text-xl text-black font-bold pl-4">Tenerife y Fuerteventura</h2>
     </div>
-    <div class="flex flex-col justify-center items-start py-16 pl-11 bg-white">
-        <h2 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pt-16 pl-4">Contáctanos </h2> 
-        <h2 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold pl-4">Tenerife: +34 605 335 571<br>Fuerteventura: +34 651 941 499</h2>
+    <div class="flex flex-col justify-center items-start py-16 pl-11 relative">
+        <div class="absolute inset-0 z-0" style="background-image: url('/static/img/coches/bg.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="relative z-10 ">
+            
+        </div>
     </div>
     
 </section>
-<section clas="bg-white">
+
+<div class="">
+<section class="bg-white">
+    <div class="relative max-w-3xl lg:mx-auto md:mx-auto sm:mx-2  mt-8 ">
+        <!-- Carousel Images -->
+        <div id="carousel-images" class="ovflow-hidden rounded-lg relative h-72">
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center" style="background-image: url('/static/img/coches/opel\ corsa.jpg'); background-size: cover; background-position: center;">
+                <button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#00a990] bg-opacity-65 text-white text-2xl w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:bg-[#008f7a] transition" onclick="location.href='fichacoches.html?id=opelCorsa'">+</button>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center" style="background-image: url('/static/img/coches/audi\ a1.jpg'); background-size: cover; background-position: center;">
+                <button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#00a990] bg-opacity-65 text-white text-2xl w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:bg-[#008f7a] transition" onclick="location.href='fichacoches.html?id=audiA1'">+</button>
+            </div>
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center" style="background-image: url('/static/img/coches/fiat\ 500.jpg'); background-size: cover; background-position: center;">
+                <button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#00a990] bg-opacity-65 text-white text-2xl w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:bg-[#008f7a] transition" onclick="location.href='fichacoches.html?id=fiat500'">+</button>
+            </div>
+        </div>
+        <!-- Left Arrow -->
+        <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-[#00a990] rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <!-- Right Arrow -->
+        <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-[#00a990] rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    
+</section>
+<section class="bg-white">
     <div class="max-w-7xl mx-auto px-4 py-12">
+        <h1 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pb-4 pl-4">Nuestros Vehículos</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Tarjeta 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
@@ -120,10 +152,10 @@
         </div>
     </div>
 </section>
-
-<section class="bg-gray-300">
+</div>
+<section class="bg-gray-50">
     <div class="flex flex-col justify-center items-start py-16">
-        <h1 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pt-16 pl-4">Contacto</h1>
+        <h1 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pl-4">Contacto</h1>
     </div>
     <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Tarjeta 1 -->
@@ -131,7 +163,7 @@
             <img src="https://source.unsplash.com/300x200/?contact,office" alt="Oficina" class="w-full md:w-1/3 h-48 object-cover">
             <div class="p-6 flex flex-col justify-center">
                 <h3 class="text-xl font-bold mb-2">Oficina Tenerife</h3>
-                <p class="text-gray-700">Dirección: Calle Ejemplo 123, Santa Cruz de Tenerife<br>Teléfono: +34 922 000 000<br>Email: tenerife@africarsrent.com</p>
+                <p class="text-gray-700">Dirección: Calle Ejemplo 123, Santa Cruz de Tenerife<br>Teléfono: +34 605 335 571<br>Email: tenerife@africarsrent.com</p>
             </div>
         </div>
         <!-- Tarjeta 2 -->
@@ -139,7 +171,7 @@
             <img src="https://source.unsplash.com/300x200/?contact,helpdesk" alt="Atención al cliente" class="w-full md:w-1/3 h-48 object-cover">
             <div class="p-6 flex flex-col justify-center">
                 <h3 class="text-xl font-bold mb-2">Oficina Fuerteventura</h3>
-                <p class="text-gray-700">Dirección: Avenida Ejemplo 456, Arrecife<br>Teléfono: +34 928 000 000<br>Email: lanzarote@africarsrent.com</p>
+                <p class="text-gray-700">Dirección: Avenida Ejemplo 456, Arrecife<br>Teléfono: +34 651 941 499<br>Email: lanzarote@africarsrent.com</p>
             </div>
         </div>
     </div>
@@ -157,5 +189,50 @@
               </div>
     </div>
   </footer>
+  <script>
+    //Funcion para el carrusel de imagenes
+        const slides = document.querySelectorAll('.carousel-slide');
+        let current = 0;
+        let interval = null;
+
+        function showSlide(idx) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === idx ? '1' : '0';
+                slide.style.zIndex = i === idx ? '1' : '0';
+            });
+            current = idx;
+        }
+
+        function nextSlide() {
+            showSlide((current + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            showSlide((current - 1 + slides.length) % slides.length);
+        }
+
+        function startAuto() {
+            interval = setInterval(nextSlide, 7000);
+        }
+
+        function stopAuto() {
+            clearInterval(interval);
+        }
+
+        document.getElementById('carousel-next').addEventListener('click', () => {
+            stopAuto();
+            nextSlide();
+            startAuto();
+        });
+
+        document.getElementById('carousel-prev').addEventListener('click', () => {
+            stopAuto();
+            prevSlide();
+            startAuto();
+        });
+
+        showSlide(0);
+        startAuto();
+    </script>
 </body>
 </html>
