@@ -1,0 +1,128 @@
+{
+    "coches": [
+        {
+            "id": "peugot208",
+            "marca": "Peugeot",
+            "modelo": "208",
+            "precio": "20€/dia",
+            "ocupantes": 4,
+            "puertas": 4,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",            
+            "imagenes": [
+                "./static/img/coches/peugot 208 blanco.jpg",
+                "./static/img/coches/peugot 308.jpg"
+            ],
+            "otros": [
+                "Aire acondicionado",
+                "Seguro",
+                "Climatizador",
+                "Radio",
+                "Techo solar"
+            ]   
+        },
+        {
+            "id": "citroenC3",
+            "marca": "Citroen",
+            "modelo": "C3",
+            "precio": "15€/dia",
+            "ocupantes": 4,
+            "puertas": 4,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/citroen c3.jpg"
+            ],
+            "otros": ["Aire acondicionado", "Seguro"]   
+        },
+        {
+            "id": "citroenJumpy",
+            "marca": "Citroen",
+            "modelo": "Jumpy",
+            "precio": "25€/dia",
+            "ocupantes": 2,
+            "puertas": 2,
+            "maletero": "1000L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/citroen jumpy.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "peugot308",
+            "marca": "Peugeot",
+            "modelo": "308",
+            "precio": "10€/dia",
+            "ocupantes": 4,
+            "puertas": 4,
+            "maletero": "400L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/peugot 308.jpg"
+            ],
+            "otros": [                
+                    "Aire acondicionado",
+                "Seguro",
+                "Climatizador",
+                "Radio",
+                "Techo solar"]
+        },
+        {
+            "id": "citroenC5Aircross",
+            "marca": "Citroen",
+            "modelo": "C5 Aircross",
+            "precio": "30€/dia",
+            "ocupantes": 4,
+            "puertas": 4,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/citroen c5 aircross.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "renaultClio",
+            "marca": "Renault",
+            "modelo": "Clio",
+            "precio": "25€/dia",
+            "ocupantes": 2,
+            "puertas": 4,
+            "maletero": "200L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/renault clio.png"
+            ],
+            "otros": []
+        },
+        {
+            "id": "volkswagenTaigo",
+            "marca": "Volkswagen",
+            "modelo": "Taigo",
+            "precio": "25€/dia",
+            "ocupantes": 4,
+            "puertas": 4,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/volkswagen taigo.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "opelCorsa",
+            "marca": "Opel",
+            "modelo": "Corsa",
+            "precio": "25€/dia",
+            "ocupantes": 4,
+            "puertas": 4,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/opel corsa.jpg"
+            ],
+            "otros": []
+        }
+    ]
+}
