@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Africars Rent</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="./img/favicon_io/favicon-192x192.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./img/favicon_io/favicon.svg" />
+        <link rel="shortcut icon" href="./img/favicon_io/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="BIIG" />
+        <link rel="manifest" href="./img/favicon_io/site.webmanifest" />
+        <!-- Links de Fuentes y Awesome Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- CSS personalizado -->
+        <link rel="stylesheet" href="assets/css/home.css">
+       
+        <!-- Tailwind CSS por CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .holi {
+                border-radius: 20px;
+                margin-left: 100px;
+            }
+            .imagen-texto {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            #extras {
+                border-radius: 10px;
+                margin: 2rem;
+            }
+            .desccripcion {
+                align-self: center;
+                max-width: 40%;
+            }
+            .texto {
+                margin-right: 10% !important;
+                align-self: center;
+            }
+            @media (max-width: 768px) {
+                .imagen-texto {
+                    flex-direction: column;                
+                }
+                .texto {
+                    margin-left: 40px !important;
+                    margin-top: 0px !important;
+                }
+                .carousel {
+                    align-self: center;
+
+                }
+                .holi {
+                    align-self: center;
+                    width: 90%;
+                    height: 90%;
+                    margin: 0;
+                }
+                .desccripcion {
+                    margin-right: 40px !important;
+                }
+            }
+        </style>
+    </head>
+<header class="bg-[#00a990] fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+        <img src="/static/logos/LOGO AFRICARS.svg" alt="Tambor Logo" style="max-height:60px"/>
+        <nav class="flex-1 flex justify-end items-center space-x-4">
+            <h2 class="text-white font-semibold text-base md:text-lg lg:text-xl text-right leading-tight">
+                Tenerife: +34 605 335 571<br>Fuerteventura: +34 651 941 499
+            </h2>
+        </nav>
+    </div>
+  </header>
+
+    <body class="pt-24">
+        <div>
+            <div class="imagen-texto justify-center">
+                <section class="bg-white holi">
+                    <div class="carrousel rounded-lg relative max-w-3xl max-h-auto lg:mx-auto md:mx-auto sm:mx-2  mt-8 ">
+                        <!-- Carousel Images -->
+                        <div id="carousel-images" class="rounded-lg h-[500px] w-[500px] m-12"></div>
+                        <!-- Left Arrow -->
+                        <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-[#00a990] rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <!-- Right Arrow -->
+                        <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-[#00a990] rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+                <div class="texto-descipcion flex flex-row">
+                    <div class="texto mx-40 my-12 w-[300px]">
+                        <br>
+                        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl" id="nombre">Nombre</h1>
+                        <h2 class="text-4xl font-extrabold" id="precio">Precio</h2>
+                        <br><br>
+                        <h3 class="text-xl font-bold" id="ocupantes">Ocupantes</h3>
+                        <h3 class="text-xl font-bold" id="puertas">Puertas</h3>
+                        <h3 class="text-xl font-bold" id="maletero">Maletero</h3>
+                        <br><br>
+                    </div>
+                    <div class="desccripcion leading-none text-2xl font-bold" id="desc">
+                        
+                    </div>
+                </div>
+            </div>
+        <div id="extras" class="bg-gray-300">
+            <br>
+            <h2 class="m-8 font-bold" id="otros">No hay extras</h2>
+            <br>
+        </div>
+        <footer class="text-base text-white py-6 text-center" style="background-color : #00a990">
+            <div class="container mx-auto px-4 md:px-6 text-center">
+                <p >&copy; 2025 Grupo Tambor.<a href="https://www.arennalabs.com" class="group hover:text-white transition-colors duration-300" target="_blank"> Desarrollado por <span class="font-bold group-hover:text-[#21CC5A] transition-colors duration-300">Arenna Labs</span></a></p>
+                <div class="mt-4 space-x-4">
+                    <a href="#" class="text-white hover:text-[#aeb6bf]"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                    <a href="#" class="text-white hover:text-[#aeb6bf]"><i class="fab fa-x-twitter" target="_blank"></i></a>
+                    <a href="#" class="text-white hover:text-[#aeb6bf]"><i class="fab fa-instagram" target="_blank"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+            //Funcion para el carrusel de imagenes
+        
+
+        function showSlide(idx) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === idx ? '1' : '0';
+                slide.style.zIndex = i === idx ? '1' : '0';
+            });
+            current = idx;
+        }
+
+        function nextSlide() {
+            showSlide((current + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            showSlide((current - 1 + slides.length) % slides.length);
+        }
+
+        function startAuto() {
+            interval = setInterval(nextSlide, 7000);
+        }
+
+        function stopAuto() {
+            clearInterval(interval);
+        }
+
+        document.getElementById('carousel-next').addEventListener('click', () => {
+            stopAuto();
+            nextSlide();
+            startAuto();
+        });
+
+        document.getElementById('carousel-prev').addEventListener('click', () => {
+            stopAuto();
+            prevSlide();
+            startAuto();
+        });
+
+
+        
+        function getCarId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+        async function cargarInformacionCoche() {
+            try {
+                const response = await fetch('coches.json');
+                const data = await response.json();
+                
+                const carId = getCarId();
+                const car = data.coches.find(e => e.id === carId);
+                
+                if (!car) {
+                    console.error('Club no encontrado');
+                    return;
+                }
+                document.title = `${car.marca}` + " " + `${car.modelo}`;
+                document.getElementById('nombre').textContent =`${car.marca}` + " " + `${car.modelo}`;
+                document.getElementById('precio').textContent = car.precio;
+                document.getElementById('ocupantes').textContent = "Numero de personas: " + car.ocupantes;
+                document.getElementById('puertas').textContent = "Numero de puertas: " + car.puertas;
+                document.getElementById('maletero').textContent = car.maletero;
+                document.getElementById('desc').textContent = car.descripcion;
+                let imagenes = document.getElementById('carousel-images')
+                imagenes.innerHTML = car.imagenes.map(imagen => `<div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                <!-- Fondo desenfocado -->
+                <div class="absolute inset-0 overflow-hidden z-0">
+                <img src="${imagen}" class="w-full h-full object-cover blur-lg scale-110" /></div>
+                <!-- Imagen principal -->
+                <img src="${imagen}" class="relative z-10 max-h-[600px] w-auto object-contain shadow-lg rounded-lg"></div>`).join('');
+                slides = document.querySelectorAll('.carousel-slide');
+                showSlide(0);
+                startAuto();
+                let jsonArray = car.otros;
+                if (jsonArray.length > 0) {
+                    document.getElementById('otros').innerHTML = "";
+                    for (let i in car.otros) {
+                        document.getElementById('otros').innerHTML += "·" + (car.otros[i] + "<br>");
+                    }
+                }
+                
+            }
+            catch (error) {
+                console.error('Error al cargar la información del coche:', error);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', cargarInformacionCoche);
+        let slides = document.querySelectorAll('.carousel-slide');
+        let current = 0;
+        let interval = null;
+
+        console.log(slides)
+    </script>
+</html>
