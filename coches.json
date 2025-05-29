@@ -2,13 +2,14 @@
     "coches": [
         {
             "id": "peugot208",
-            "marca": "Peugeot",
+            "marca": "Peugot",
             "modelo": "208",
-            "precio": "20€/dia",
+            "precio": "--€/dia",
             "ocupantes": 4,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",            
+            "imagen_principal": "./static/img/coches/peugot 208 blanco.jpg",
             "imagenes": [
                 "./static/img/coches/peugot 208 blanco.jpg",
                 "./static/img/coches/peugot 308.jpg"
@@ -19,45 +20,91 @@
                 "Climatizador",
                 "Radio",
                 "Techo solar"
-            ]   
+            ],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         },
         {
             "id": "citroenC3",
             "marca": "Citroen",
             "modelo": "C3",
-            "precio": "15€/dia",
+            "precio": "--€/dia",
             "ocupantes": 4,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/citroen c3.jpg",
             "imagenes": [
                 "./static/img/coches/citroen c3.jpg"
             ],
-            "otros": ["Aire acondicionado", "Seguro"]   
+            "otros": ["Aire acondicionado", "Seguro"
+            ],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         },
         {
             "id": "citroenJumpy",
             "marca": "Citroen",
             "modelo": "Jumpy",
-            "precio": "25€/dia",
+            "precio": "--€/dia",
             "ocupantes": 2,
-            "puertas": 3,
+            "puertas": 2,
             "maletero": "1000L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/citroen jumpy.jpg",
             "imagenes": [
                 "./static/img/coches/citroen jumpy.jpg"
             ],
-            "otros": []
+            "otros": [],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+                ]
         },
         {
             "id": "peugot308",
-            "marca": "Peugeot",
+            "marca": "Peugot",
             "modelo": "308",
-            "precio": "10€/dia",
+            "precio": "--€/dia",
             "ocupantes": 4,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "400L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/peugot 308.jpg",
             "imagenes": [
                 "./static/img/coches/peugot 308.jpg"
             ],
@@ -66,63 +113,137 @@
                 "Seguro",
                 "Climatizador",
                 "Radio",
-                "Techo solar"]
+                "Techo solar"],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         },
         {
             "id": "citroenC5Aircross",
             "marca": "Citroen",
             "modelo": "C5 Aircross",
-            "precio": "30€/dia",
+            "precio": "--€/dia",
             "ocupantes": 4,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/citroen c5 aircross.jpg",
             "imagenes": [
                 "./static/img/coches/citroen c5 aircross.jpg"
             ],
-            "otros": []
+            "otros": [],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         },
         {
             "id": "renaultClio",
-            "marca": "Renault",
+            "marca": "Renaul",
             "modelo": "Clio",
-            "precio": "25€/dia",
+            "precio": "--€/dia",
             "ocupantes": 2,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "200L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/renault clio.png",
             "imagenes": [
                 "./static/img/coches/renault clio.png"
             ],
-            "otros": []
+            "otros": [],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         },
         {
             "id": "volkswagenTaigo",
             "marca": "Volkswagen",
             "modelo": "Taigo",
-            "precio": "25€/dia",
+            "precio": "--€/dia",
             "ocupantes": 4,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/volkswagen taigo.jpg",
             "imagenes": [
                 "./static/img/coches/volkswagen taigo.jpg"
             ],
-            "otros": []
+            "otros": [],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         },
         {
             "id": "opelCorsa",
             "marca": "Opel",
             "modelo": "Corsa",
-            "precio": "25€/dia",
+            "precio": "--€/dia",
             "ocupantes": 4,
-            "puertas": 5,
+            "puertas": 4,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagen_principal": "./static/img/coches/opel corsa.jpg",
             "imagenes": [
                 "./static/img/coches/opel corsa.jpg"
             ],
-            "otros": []
+            "otros": [],
+            "comentarios": [
+                {
+                    "imagen": "./static/img/aaa.jpg",
+                    "autor": "Pepe",
+                    "comentario": "Excelente coche",
+                    "estrellas": 5
+                },
+                {
+                    "imagen": "./static/img/OIP.jpg",
+                    "autor": "Juan",
+                    "comentario": "Muy buen coche",
+                    "estrellas": 4
+                }
+            ]
         }
     ]
 }
