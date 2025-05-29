@@ -6,7 +6,7 @@
             "modelo": "208",
             "precio": "20€/dia",
             "ocupantes": 4,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",            
             "imagenes": [
@@ -27,7 +27,7 @@
             "modelo": "C3",
             "precio": "15€/dia",
             "ocupantes": 4,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
@@ -41,7 +41,7 @@
             "modelo": "Jumpy",
             "precio": "25€/dia",
             "ocupantes": 2,
-            "puertas": 2,
+            "puertas": 3,
             "maletero": "1000L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
@@ -55,7 +55,7 @@
             "modelo": "308",
             "precio": "10€/dia",
             "ocupantes": 4,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "400L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
@@ -74,7 +74,7 @@
             "modelo": "C5 Aircross",
             "precio": "30€/dia",
             "ocupantes": 4,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
@@ -88,7 +88,7 @@
             "modelo": "Clio",
             "precio": "25€/dia",
             "ocupantes": 2,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "200L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
@@ -102,7 +102,7 @@
             "modelo": "Taigo",
             "precio": "25€/dia",
             "ocupantes": 4,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
@@ -116,7 +116,7 @@
             "modelo": "Corsa",
             "precio": "25€/dia",
             "ocupantes": 4,
-            "puertas": 4,
+            "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
