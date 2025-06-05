@@ -4,14 +4,15 @@
             "id": "peugot208",
             "marca": "Peugeot",
             "modelo": "208",
-            "precio": "20€/dia",
+            "precio": "30€/dia",
+            "todoriesgo": "35€/dia",
             "ocupantes": 4,
             "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",            
+            "gama":"E",
             "imagenes": [
-                "./static/img/coches/peugot 208 blanco.jpg",
-                "./static/img/coches/peugot 308.jpg"
+                "./static/img/coches/peugot 208 blanco.jpg"
             ],
             "otros": [
                 "Aire acondicionado",
@@ -25,13 +26,15 @@
             "id": "citroenC3",
             "marca": "Citroen",
             "modelo": "C3",
-            "precio": "15€/dia",
+            "precio": "30€/dia",
+            "todoriesgo": "35€/dia",
             "ocupantes": 4,
             "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"E",
             "imagenes": [
-                "./static/img/coches/citroen c3.jpg"
+                "./static/img/coches/citroen-c3.jpg"
             ],
             "otros": ["Aire acondicionado", "Seguro"]   
         },
@@ -45,7 +48,7 @@
             "maletero": "1000L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
-                "./static/img/coches/citroen jumpy.jpg"
+                "./static/img/coches/citroen-jumpy.jpg"
             ],
             "otros": []
         },
@@ -59,7 +62,7 @@
             "maletero": "400L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
-                "./static/img/coches/peugot 308.jpg"
+                "./static/img/coches/peugot-308.jpg"
             ],
             "otros": [                
                     "Aire acondicionado",
@@ -72,13 +75,15 @@
             "id": "citroenC5Aircross",
             "marca": "Citroen",
             "modelo": "C5 Aircross",
-            "precio": "30€/dia",
-            "ocupantes": 4,
+            "precio": "42€/dia",
+            "todoriesgo": "47€/dia",
+            "ocupantes": 5,
             "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"A",
             "imagenes": [
-                "./static/img/coches/citroen c5 aircross.jpg"
+                "./static/img/coches/citroen-c5-aircross.jpg"
             ],
             "otros": []
         },
@@ -91,8 +96,9 @@
             "puertas": 5,
             "maletero": "200L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"E",
             "imagenes": [
-                "./static/img/coches/renault clio.png"
+                "./static/img/coches/renault-clio.png"
             ],
             "otros": []
         },
@@ -100,13 +106,15 @@
             "id": "volkswagenTaigo",
             "marca": "Volkswagen",
             "modelo": "Taigo",
-            "precio": "25€/dia",
+            "precio": "37€/dia",
+            "todoriesgo": "42€/dia",
             "ocupantes": 4,
             "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
             "imagenes": [
-                "./static/img/coches/volkswagen taigo.jpg"
+                "./static/img/coches/volkswagen-taigo-2.jpg"
             ],
             "otros": []
         },
@@ -114,15 +122,161 @@
             "id": "opelCorsa",
             "marca": "Opel",
             "modelo": "Corsa",
-            "precio": "25€/dia",
+            "precio": "30€/dia",
+            "todoriesgo": "35€/dia",
+            "ocupantes": 4,
+            "puertas": 5,
+            "maletero": "500L",
+            "gama":"E",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/opel-corsa.jpg"
+            ],
+            "otros": []
+        },{
+            "id": "fiat500",
+            "marca": "Fiat",
+            "modelo": "500",
+            "precio": "30€/dia",
+            "todoriesgo": "35€/dia",
+            "ocupantes": 4,
+            "puertas": 5,
+            "maletero": "500L",
+            "gama":"E",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/fiat-500-2.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "peugot2008",
+            "marca": "Peugeot",
+            "modelo": "2008",
+            "precio": "37€/dia",
+            "todoriesgo": "42€/dia",
+            "ocupantes": 5,
+            "puertas": 5,
+            "maletero": "500L",
+            "gama":"M",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/peugot-2008.jpg"
+            ],
+            "otros": []
+        },{
+            "id": "citroenC4",
+            "marca": "Citroen",
+            "modelo": "C4",
+            "precio": "37€/dia",
+            "todoriesgo": "42€/dia",
+            "ocupantes": 5,
+            "puertas": 5,
+            "maletero": "500L",
+            "gama":"M",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "imagenes": [
+                "./static/img/coches/citroen-c4.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "volkswagenT-Cross",
+            "marca": "Volkswagen",
+            "modelo": "T-Cross",
+            "precio": "37€/dia",
+            "todoriesgo": "42€/dia",
             "ocupantes": 4,
             "puertas": 5,
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
             "imagenes": [
-                "./static/img/coches/opel corsa.jpg"
+                "./static/img/coches/volkswagen-tcross.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "audiA1",
+            "marca": "Audi",
+            "modelo": "A1",
+            "precio": "37€/dia",
+            "todoriesgo": "42€/dia",
+            "ocupantes": 5,
+            "puertas": 3,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
+            "imagenes": [
+                "./static/img/coches/audi-a1-2.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "citroenberlingo",
+            "marca": "Citroen",
+            "modelo": "Berlingo",
+            "precio": "37€/dia",
+            "todoriesgo": "42€/dia",
+            "ocupantes": 5,
+            "puertas": 5,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
+            "imagenes": [
+                "./static/img/coches/citroen-berlingo.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "audiq2",
+            "marca": "Audi",
+            "modelo": "Q2",
+            "precio": "42€/dia",
+            "todoriesgo": "47€/dia",
+            "ocupantes": 5,
+            "puertas": 5,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
+            "imagenes": [
+                "./static/img/coches/aqudi-q2.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "volkswagenTiguan",
+            "marca": "Volkswagen",
+            "modelo": "Tiguan",
+            "precio": "42€/dia",
+            "todoriesgo": "47/dia",
+            "ocupantes": 5,
+            "puertas": 5,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
+            "imagenes": [
+                "./static/img/coches/volkswagen-tiguan.jpg"
+            ],
+            "otros": []
+        },
+        {
+            "id": "renaultTrafc",
+            "marca": "Renault",
+            "modelo": "Trafic",
+            "precio": "42€/dia",
+            "todoriesgo": "47/dia",
+            "ocupantes": 5,
+            "puertas": 5,
+            "maletero": "500L",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "gama":"M",
+            "imagenes": [
+                "./static/img/coches/volkswagen-tiguan.jpg"
             ],
             "otros": []
         }
+        
+
     ]
 }

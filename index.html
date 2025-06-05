@@ -2,8 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Africars Rent</title>
+  <title>Africars  | Alquiler de Coches en Tenerife y Fuerteventura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alquila tu coche al mejor precio con nosotros. Con cobertura en Tenerife y Fuerteventura. ¡Contáctanos para hacer tu reserva!"> 
+  <meta name="author" content="Africars">
+  <meta property="og:title" content="Africars - Alquiler  de Coches en Tenerife y Fuerteventura">
+  <meta property="og:description" content="¿Necesitas un coche? Conduce hoy mismo con nuestro servicio de alquiler sin líos. Vehículos nuevos, precios claros y todo incluido. ¡Haz tu reserva fácil y rápido!">
+  <meta property="og:type" content="website">
   <!-- Favicon-->
   <link rel="icon" type="image/png" href="/static/favicon_io/favicon-192x192.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/static/favicon_io/favicon.svg"/>
@@ -24,150 +29,304 @@
   .bebas {
     font-family: 'Bebas Neue', cursive;
   }
+    header {
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+    transform: translateY(-30px);
+    will-change: opacity, transform;
+  }
+  header.header-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    display: block !important;
+  }
+  @keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease-out forwards;
+}
   </style>
 </head>
 
 <body class="bg-gray-50">
+<!-- Progress Bar at Top -->
+    <div id="progress-bar" style="position:fixed;top:0;left:0;width:0;height:4px;z-index:60;background:black;transition:width 0.2s;"></div>
+        
 <!-- Seccion de Inicio -->
    <header class="bg-[#00a990] fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
-        <img src="/static/logos/LOGO AFRICARS2.svg" alt="Tambor Logo" style="max-height:60px" class="hover:scale-105 transform transition-all duration 300"/>
-        <nav class="flex-1 flex justify-end items-center space-x-4">
-            <h2 class="text-white font-semibold text-base md:text-lg lg:text-xl text-right leading-tight">
-                Tenerife: +34 605 335 571<br>Fuerteventura: +34 651 941 499
-            </h2>
-        </nav>
+            <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
+                <a href="index.html">
+                <img src="/static/logos/LOGO AFRICARS2.svg" alt="Tambor Logo" style="max-height:60px" class="hover:scale-105 transform transition-all duration-300 mb-2 sm:mb-0"/>
+                </a>
+                <nav class="w-full sm:w-auto flex flex-col sm:flex-row justify-end items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                    <div class="text-white font-semibold text-base md:text-lg lg:text-xl text-center sm:text-right leading-tight">
+                        <span class="block sm:inline">Tenerife: <a href="tel:+34605335571" class="underline hover:text-[#21CC5A]">+34 605 335 571</a></span>
+                        <span class="hidden sm:inline mx-2">|</span>
+                        <span class="block sm:inline">Fuerteventura: <a href="tel:+34651941499" class="underline hover:text-[#21CC5A]">+34 651 941 499</a></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+<!-- Hero Section (Header oculto inicialmente) -->
+<section class="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden bg-gray-900">
+    <!-- Carousel Images -->
+    <div class="absolute inset-0 w-full h-full">
+        <div class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-100" style="background-image: url('/static/img/coches/fiat 500.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0" style="background-image: url('/static/img/coches/audi a1.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0" style="background-image: url('/static/img/coches/opel\ corsa.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     </div>
-  </header>
-
-<section class="bg-gray-50 grid grid-cols-2 relative">
-    <div class="flex flex-col justify-center items-start py-16 z-10">
-        <h2 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pt-16 pl-4">Alquiler de Coches en </h2> 
-        <h2 class="lg:text-6xl md:text-4xl sm:text-xl text-black font-bold pl-4">Tenerife y Fuerteventura</h2>
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center">
+        <img src="/static/logos/LOGO AFRICARS2.svg" alt="Africars Logo" style="max-height:100px; margin: 0 auto;" class="mx-auto hover:scale-105 transform transition-all duration-300"/>
+        <p class="text-white text-xl md:text-2xl mt-4 font-semibold drop-shadow-lg">Alquiler de Coches en Tenerife y Fuerteventura</p>
     </div>
-    <div class="flex flex-col justify-end items-start pb-0 pl-11 relative z-10 min-h-[300px]">
-        <div class="absolute left-0 bottom-0 w-full h-3/4 z-0" style="background-image: url('/static/img/coches/bg.jpg'); background-size: cover; background-position: center;"></div>
+    <!-- Carousel Dots -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20" id="hero-dots">
+        <button class="hero-dot w-4 h-4 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 transition-all border-2 border-[#00a990] focus:outline-none" data-idx="0"></button>
+        <button class="hero-dot w-4 h-4 rounded-full bg-white bg-opacity-40 hover:bg-opacity-100 transition-all border-2 border-[#00a990] focus:outline-none" data-idx="1"></button>
+        <button class="hero-dot w-4 h-4 rounded-full bg-white bg-opacity-40 hover:bg-opacity-100 transition-all border-2 border-[#00a990] focus:outline-none" data-idx="2"></button>
     </div>
 </section>
 
 
-<section class="bg-white pt-10">
-    
-    <div class="relative max-w-3xl lg:mx-auto md:mx-auto sm:mx-2 hover:scale-105 transform transition-all duration-300">
-        <!-- Carousel Images -->
-        <div id="carousel-images" class="ovflow-hidden rounded-lg relative h-72 shadow-lg">
-            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center " style="background-image: url('/static/img/coches/opel\ corsa.jpg'); background-size: cover; background-position: center;">
-                <button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#00a990] bg-opacity-65 text-white text-2xl w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=opelCorsa')">+</button>
-            </div>
-            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center" style="background-image: url('/static/img/coches/audi\ a1.jpg'); background-size: cover; background-position: center;">
-                <button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#00a990] bg-opacity-65 text-white text-2xl w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=audiA1', '_blank')">+</button>
-            </div>
-            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center" style="background-image: url('/static/img/coches/fiat\ 500.jpg'); background-size: cover; background-position: center;">
-                <button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#00a990] bg-opacity-65 text-white text-2xl w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=fiat500', '_blank')">+</button>
+<section class="bg-gradient-to-b from-white to-gray-100 py-16 observe-right">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 bebas mb-4 md:mb-0 pl-2">Nuestros Vehículos</h2>
+            <div class="flex items-center space-x-2">
+                <label for="marcaSelect" class="text-gray-700 font-medium">Marca:</label>
+                <select id="marcaSelect" class="border border-gray-300 rounded px-3 py-2 focus:ring-[#00a990] focus:border-[#00a990] transition">
+                    <option value="todas">Todas las marcas</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Citroen">Citroën</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Opel">Opel</option>
+                </select>
             </div>
         </div>
-        <!-- Left Arrow -->
-        <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-[#00a990] rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <!-- Right Arrow -->
-        <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-[#00a990] rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
-    
-</section>
-<!-- Seccion de Nuestros Vehículos -->
-<section class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-12">
-        <h1 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pb-4 pl-4">Nuestros Vehículos</h1>
-        
-        <label for="marcaSelect" class="ml-5">Marca:</label>
-        <select id="marcaSelect" class="mb-6">
-            <option value="todas">Todas las marcas</option>
-            <option value="Peugot">Peugot</option>
-            <option value="Citroen">Citroën</option>
-            <option value="Renaul">Renaul</option>
-            <option value="Volkswagen">Volkswagen</option>
-            <option value="Opel">Opel</option>
-        </select>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <!-- Tarjeta 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Peugot">
-                        <img src="/static/img/coches/peugot 208 blanco.jpg" alt="Coche 1" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Peugot 208</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=peugot208', '_blank')" >Saber más</button>
-                        </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Peugeot">
+                <div class="relative">
+                    <img src="/static/img/coches/peugot 208 blanco.jpg" alt="Coche 1" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Peugeot</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Peugeot 208</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
                     </div>
-                    <!-- Tarjeta 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Citroen">
-                        <img src="/static/img/coches/citroen c3.jpg" alt="Coche 2" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Citroën C3</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=citroenC3', '_blank')">Saber más</button>
-                        </div>
+                    <a href="fichacoches.html?id=peugot208" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Citroen">
+                <div class="relative">
+                    <img src="/static/img/coches/citroen c3.jpg" alt="Coche 2" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Citroën</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Citroën C3</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
                     </div>
-                    <!-- Tarjeta 3 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Citroen">
-                        <img src="/static/img/coches/citroen jumpy.jpg" alt="Coche 3" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Citroën Jumpy</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=citroenJumpy', '_blank')">Saber más</button>
-                        </div>
+                    <a href="fichacoches.html?id=citroenC3" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Citroen">
+                <div class="relative">
+                    <img src="/static/img/coches/citroen jumpy.jpg" alt="Coche 3" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Citroën</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Citroën Jumpy</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>9 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>3 puertas</span>
                     </div>
-                    <!-- Tarjeta 4 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Peugot">
-                        <img src="/static/img/coches/peugot 308.jpg" alt="Coche 4" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Peugot 308</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=peugot308', '_blank')">Saber más</button>
-                        </div>
+                    <a href="fichacoches.html?id=citroenJumpy" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Peugeot">
+                <div class="relative">
+                    <img src="/static/img/coches/peugot 308.jpg" alt="Coche 4" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Peugeot</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Peugot 308</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
                     </div>
-                    <!-- Tarjeta 5 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Citroen">
-                        <img src="/static/img/coches/citroen c5 aircross.jpg" alt="Coche 5" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Citroën C5 Aircross</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=citroenC5Aircross', '_blank')">Saber más</button>
-                        </div>
+                    <a href="fichacoches.html?id=peugot308" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Citroen">
+                <div class="relative">
+                    <img src="/static/img/coches/citroen c5 aircross.jpg" alt="Coche 5" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Citroën</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Citroën C5 Aircross</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
                     </div>
-                    <!-- Tarjeta 6 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Renault">
-                        <img src="/static/img/coches/renault clio.png" alt="Coche 6" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Renault Clio</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=renaultClio', '_blank')">Saber más</button>
-                        </div>
+                    <a href="fichacoches.html?id=citroenC5Aircross" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Renault">
+                <div class="relative">
+                    <img src="/static/img/coches/renault clio.png" alt="Coche 6" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Renault</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Renault Clio</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
                     </div>
-                    <!-- Tarjeta 7 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Volkswagen">
-                        <img src="/static/img/coches/volkswagen taigo.jpg" alt="Coche 7" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Volskwagen Taigo</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=volkswagenTaigo', '_blank')">Saber más</button>    
-                        </div>
+                    <a href="fichacoches.html?id=renaultClio" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 7 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Volkswagen">
+                <div class="relative">
+                    <img src="/static/img/coches/volkswagen taigo.jpg" alt="Coche 7" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Volkswagen</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Volskwagen Taigo</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
                     </div>
-                    <!-- Tarjeta 8 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 transform transition-all duration-300 coche" data-marca="Opel">
-                        <img src="/static/img/coches/opel corsa.jpg" alt="Coche 8" class="w-full h-40 object-cover">
-                        <div class="p-4 flex flex-col flex-1">
-                            <h3 class="text-lg font-bold mb-2">Opel Corsa</h3>
-                            <button class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded hover:bg-[#008f7a] transition" onclick="window.open('fichacoches.html?id=opelCorsa', '_blank')">Saber más</button>
+                    <a href="fichacoches.html?id=volkswagenTaigo" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+            <!-- Tarjeta 8 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_#00a990] transform transition-all duration-300 coche" data-marca="Opel">
+                <div class="relative">
+                    <img src="/static/img/coches/opel corsa.jpg" alt="Coche 8" class="w-full h-44 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-300">
+                    <span class="absolute top-3 left-3 bg-[#00a990] text-white text-xs px-3 py-1 rounded-full shadow">Opel</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-[#00a990] transition-colors duration-300">Opel Corsa</h3>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-user-group mr-1"></i>5 pasajeros</span>
+                        <span class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs group-hover:text-blue-400 transition-colors duration-300"><i class="fa fa-car-side mr-1"></i>5 puertas</span>
+                    </div>
+                    <a href="fichacoches.html?id=opelCorsa" target="_blank" rel="noopener noreferrer" class="mt-auto bg-[#00a990] text-white px-4 py-2 rounded-lg hover:bg-[#008f7a] transition block text-center font-semibold shadow">Saber más</a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+<section class="bg-white py-16 observe-left">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold bebas text-gray-900 mb-4">Clientes Satisfechos</h2>
+            <p class="text-lg text-gray-700">Nuestra prioridad es su satisfacción. Más de <span id="clientes-count" class="font-bold text-[#00a990] text-2xl">0</span> clientes han confiado en nosotros.</p>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+            <div class="flex flex-col items-center hover:scale-105 transform transition-all duration-300">
+                <span class="text-5xl font-extrabold text-[#00a990] flex items-center">
+                    <span class="mr-1 text-4xl">></span>
+                    <span id="clientes-num">0</span>
+                </span>
+                <span class="text-gray-700 text-lg mt-2">Clientes satisfechos</span>
+            </div>
+            <div class="flex flex-col items-center hover:scale-105 transform transition-all duration-300">
+                <div class="flex items-center mb-2">
+                    <span class="text-4xl font-extrabold text-[#00a990]" id="valoracion-num">0</span>
+                    <span class="text-2xl text-gray-700 ml-1">/ 5</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa fa-star text-yellow-400 text-2xl  hover:text-yellow-200 transition-colors duration-300"></i>
+                    <i class="fa fa-star text-yellow-400 text-2xl  hover:text-yellow-200 transition-colors duration-300"></i>
+                    <i class="fa fa-star text-yellow-400 text-2xl  hover:text-yellow-200 transition-colors duration-300"></i>
+                    <i class="fa fa-star text-yellow-400 text-2xl  hover:text-yellow-200 transition-colors duration-300"></i>
+                    <i class="fa fa-star-half-alt text-yellow-400 text-2xl hover:text-yellow-200 transition-colors duration-300"></i>
+                </div>
+                <span class="text-gray-700 text-lg mt-2">Valoración media</span>
+            </div>
+            <!-- Estadísticas con barras -->
+            <div class="flex flex-col gap-6 w-full max-w-xs md:ml-8">
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-gray-700 font-medium">Clientes que repiten</span>
+                        <span class="text-[#00a990] font-bold" id="barra-repite-label">0%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4 hover:scale-105 transform transition-all duration-300">
+                        <div id="barra-repite" class="bg-[#00a990] h-4 rounded-full transition-all duration-900 " style="width:0%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-gray-700 font-medium">Recomendaciones</span>
+                        <span class="text-[#00a990] font-bold" id="barra-recomienda-label">0%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4 hover:scale-105 transform transition-all duration-300">
+                        <div id="barra-recomienda" class="bg-[#00a990] h-4 rounded-full transition-all duration-900" style="width:0%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-gray-700 font-medium">Satisfacción general</span>
+                        <span class="text-[#00a990] font-bold" id="barra-satisfecho-label">0%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4 hover:scale-105 transform transition-all duration-300">
+                        <div id="barra-satisfecho" class="bg-[#00a990] h-4 rounded-full transition-all duration-900" style="width:0%"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 
 <section class="bg-gray-50">
-    <div class="flex flex-col justify-center items-start py-4">
-        <h1 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-bold mt-0 pl-4">Contacto</h1>
+    <div class="flex flex-col justify-center items-center py-4">
+        <h1 class="lg:text-4xl md:text-2xl sm:text-lg text-black font-extrabold bebas mt-0 pl-0 text-center">CONTACTO</h1>
     </div>
     <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Tarjeta 1 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row hover:scale-105 transform transition-all duration-300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.0850516264193!2d-16.310149918586564!3d28.43846350943236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cd24a435a6ef%3A0x7c623d9093205bd3!2sCtra.%20del%20Sobradillo%2C%2014%2C%2038107%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1748519332476!5m2!1ses!2ses" 
+        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row transform transition-all duration-300 observe-left hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.364358756205!2d-16.311659158162417!3d28.43843089623465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cd501434fc6d%3A0x2ee260ee1f0b309e!2sAFRICARS!5e0!3m2!1ses!2ses!4v1749046923114!5m2!1ses!2ses"
                 width="600" 
                 height="450" 
                 style="border:0;" 
@@ -178,14 +337,18 @@
             <div class="p-6 flex flex-col justify-center">
                 <h3 class="text-xl font-bold mb-2">Oficina Tenerife</h3>
                 <p class="text-gray-700">Dirección: Ctra. del Sobradillo, 14, Santa Cruz de Tenerife<br>Teléfono: +34 605 335 571<br>Email: tenerife@africarsrent.com</p>
+                <a class="mt-4  bg-[#00a990] text-white  px-3 py-1 rounded-full shadow items-center text-center hover:bg-[#008f7a] transition-colors" href="https://maps.app.goo.gl/HhmL6yJHxky4cDHa9" target="_blank" rel="noopener noreferrer">
+                    Ver en Google Maps</a>
             </div>
         </div>
         <!-- Tarjeta 2 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row hover:scale-105 transform transition-all duration-300">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row transform transition-all duration-300 observe-right hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
             <img src="https://source.unsplash.com/300x200/?contact,helpdesk" alt="Atención al cliente" class="w-full md:w-1/3 h-48 object-cover">
             <div class="p-6 flex flex-col justify-center">
                 <h3 class="text-xl font-bold mb-2">Oficina Fuerteventura</h3>
-                <p class="text-gray-700">Dirección: Avenida Ejemplo 456, Arrecife<br>Teléfono: +34 651 941 499<br>Email: lanzarote@africarsrent.com</p>
+                <p class="text-gray-700">Dirección: Avenida Ejemplo 456, Puerto del Rosario<br>Teléfono: +34 651 941 499<br>Email: fuerteventura@africarsrent.com</p>
+                <a class="mt-4  bg-[#00a990] text-white  px-3 py-1 rounded-full shadow items-center text-center hover:bg-[#008f7a] transition-colors" href="#" target="_blank" rel="noopener noreferrer">
+                    Ver en Google Maps</a>
             </div>
         </div>
     </div>
@@ -197,75 +360,234 @@
     <div class="container mx-auto px-4 md:px-6 text-center">
       <p >&copy; 2025 Grupo Tambor.<a href="https://www.arennalabs.com" class="group hover:text-white transition-colors duration-300" target="_blank"> Desarrollado por <span class="font-bold group-hover:text-[#21CC5A] transition-colors duration-300">Arenna Labs</span></a></p>
       <div class="mt-4 space-x-4">
-                  <a href="#" class="text-white hover:text-[#aeb6bf]"><i class="fab fa-facebook-f" target="_blank"></i></a>
-                  <a href="#" class="text-white hover:text-[#aeb6bf]"><i class="fab fa-x-twitter" target="_blank"></i></a>
-                  <a href="#" class="text-white hover:text-[#aeb6bf]"><i class="fab fa-instagram" target="_blank"></i></a>
+                  <a href="#" class="text-white hover:text-[#3b5998]"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                  <a href="#" class="text-white hover:text-black"><i class="fab fa-x-twitter" target="_blank"></i></a>
+                  <a href="https://www.instagram.com/afri_carent/?hl=es"  target="_blank"  class="text-white hover:text-[#f147db]" rel="nofollow"><i class="fab fa-instagram"></i></a>
               </div>
     </div>
   </footer>
   <script>
-    //Funcion para el carrusel de imagenes
-        const slides = document.querySelectorAll('.carousel-slide');
-        let current = 0;
-        let interval = null;
+    // Funcion para filtro de marca de coche
+    const marcaSelect = document.getElementById('marcaSelect');
+    const coches = document.querySelectorAll('.coche');
 
-        function showSlide(idx) {
-            slides.forEach((slide, i) => {
-                slide.style.opacity = i === idx ? '1' : '0';
-                slide.style.zIndex = i === idx ? '1' : '0';
-            });
-            current = idx;
+    marcaSelect.addEventListener('change', () => {
+      const marcaSeleccionada = marcaSelect.value;
+
+      coches.forEach(coche => {
+        const marca = coche.dataset.marca;
+        if (marcaSeleccionada === 'todas' || marca.toLowerCase() === marcaSeleccionada.toLowerCase()) {
+          coche.style.display = '';
+        } else {
+          coche.style.display = 'none';
         }
+      });
+    });
 
-        function nextSlide() {
-            showSlide((current + 1) % slides.length);
+    // Hero carousel logic
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('.hero-dot');
+    let heroCurrent = 0;
+    let heroInterval = null;
+
+    function showHeroSlide(idx) {
+      heroSlides.forEach((slide, i) => {
+        slide.style.opacity = i === idx ? '1' : '0';
+        slide.style.zIndex = i === idx ? '1' : '0';
+      });
+      heroDots.forEach((dot, i) => {
+        dot.classList.toggle('bg-opacity-60', i === idx);
+        dot.classList.toggle('bg-opacity-40', i !== idx);
+      });
+      heroCurrent = idx;
+    }
+
+    function nextHeroSlide() {
+      showHeroSlide((heroCurrent + 1) % heroSlides.length);
+    }
+
+    function prevHeroSlide() {
+      showHeroSlide((heroCurrent - 1 + heroSlides.length) % heroSlides.length);
+    }
+
+    function startHeroAuto() {
+      heroInterval = setInterval(nextHeroSlide, 6000);
+    }
+
+    function stopHeroAuto() {
+      clearInterval(heroInterval);
+    }
+
+    // Dots click event
+    heroDots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        stopHeroAuto();
+        showHeroSlide(idx);
+        startHeroAuto();
+      });
+    });
+
+    showHeroSlide(0);
+    startHeroAuto();
+
+      // Oculta el header al cargar y añade efecto al aparecer
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('header');
+    if (header) {
+      header.style.display = 'none';
+      header.classList.remove('header-visible');
+    }
+
+    let headerVisible = false;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 10) {
+        if (!headerVisible && header) {
+          header.style.display = '';
+          // Forzar reflow para que la transición funcione
+          void header.offsetWidth;
+          header.classList.add('header-visible');
+          headerVisible = true;
         }
-
-        function prevSlide() {
-            showSlide((current - 1 + slides.length) % slides.length);
-        }
-
-        function startAuto() {
-            interval = setInterval(nextSlide, 7000);
-        }
-
-        function stopAuto() {
-            clearInterval(interval);
-        }
-
-        document.getElementById('carousel-next').addEventListener('click', () => {
-            stopAuto();
-            nextSlide();
-            startAuto();
-        });
-
-        document.getElementById('carousel-prev').addEventListener('click', () => {
-            stopAuto();
-            prevSlide();
-            startAuto();
-        });
-
-        showSlide(0);
-        startAuto();
-
-
-    //Funcion para filtro de marca de coche
-        const marcaSelect = document.getElementById('marcaSelect');
-        const coches = document.querySelectorAll('.coche');
-
-        marcaSelect.addEventListener('change', () => {
-        const marcaSeleccionada = marcaSelect.value;
-
-        coches.forEach(coche => {
-            const marca = coche.dataset.marca;
-
-            if (marcaSeleccionada === 'todas' || marca === marcaSeleccionada) {
-            coche.style.display = '';
-            } else {
-            coche.style.display = 'none';
+      } else {
+        if (headerVisible && header) {
+          header.classList.remove('header-visible');
+          // Espera la transición antes de ocultar
+          setTimeout(() => {
+            if (!header.classList.contains('header-visible')) {
+              header.style.display = 'none';
             }
+          }, 500);
+          headerVisible = false;
+        }
+      }
+    });
+  });
+  // Animación de derecha e izquierda
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    if (el.classList.contains('observe-left')) {
+                        el.classList.add('animate-fadeInLeft');
+                    } else if (el.classList.contains('observe-right')) {
+                        el.classList.add('animate-fadeInRight');
+                    }
+                    el.classList.remove('opacity-0');
+                    observer.unobserve(el); // Solo se anima una vez
+                }
+            });
+        }, {
+            threshold: 0.2 // Se activa cuando el 20% del elemento es visible
         });
+
+        document.querySelectorAll('.observe-left, .observe-right').forEach(el => {
+            observer.observe(el);
         });
-    </script>
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fadeInZoom');
+        observer.unobserve(entry.target); // Para que no se repita
+        }
+    });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.opacity-0').forEach(el => observer.observe(el));
+
+        // Animación de contador para clientes y valoración
+    function animateCounter(id, end, decimals = 0, duration = 1800) {
+        const el = document.getElementById(id);
+        let start = 0;
+        const startTime = performance.now();
+        function update(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const value = start + (end - start) * progress;
+            el.textContent = value.toFixed(decimals);
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            }
+        }
+        requestAnimationFrame(update);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Puedes cambiar estos valores según tus datos reales
+        const clientesFinal = 400;
+        const valoracionFinal = 4.7;
+
+        let animated = false;
+        const targets = [
+            document.getElementById('clientes-num'),
+            document.getElementById('clientes-count'),
+            document.getElementById('valoracion-num')
+        ];
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            if (!animated && entries.some(e => e.isIntersecting)) {
+                animateCounter('clientes-num', clientesFinal, 0, 1800);
+                animateCounter('clientes-count', clientesFinal, 0, 1800);
+                animateCounter('valoracion-num', valoracionFinal, 1, 1800);
+                animated = true;
+                targets.forEach(el => obs.unobserve(el));
+            }
+        }, { threshold: 0.3 });
+
+        targets.forEach(el => {
+            if (el) observer.observe(el);
+        });
+    });
+    // Animación de barras estadísticas
+    document.addEventListener('DOMContentLoaded', function () {
+        // Valores de ejemplo, puedes cambiarlos
+        const stats = [
+            { id: 'barra-repite', label: 'barra-repite-label', value: 90 },
+            { id: 'barra-recomienda', label: 'barra-recomienda-label', value: 91 },
+            { id: 'barra-satisfecho', label: 'barra-satisfecho-label', value: 97 }
+        ];
+        // Animar cuando la sección sea visible
+        let animatedBars = false;
+        const barsSection = document.querySelector('.observe-left');
+        if (barsSection) {
+            const barsObserver = new IntersectionObserver((entries, obs) => {
+                if (!animatedBars && entries.some(e => e.isIntersecting)) {
+                    stats.forEach(stat => {
+                        const bar = document.getElementById(stat.id);
+                        const label = document.getElementById(stat.label);
+                        let start = 0;
+                        const end = stat.value;
+                        const duration = 1200;
+                        const startTime = performance.now();
+                        function animateBar(now) {
+                            const progress = Math.min((now - startTime) / duration, 1);
+                            const value = Math.round(start + (end - start) * progress);
+                            bar.style.width = value + '%';
+                            label.textContent = value + '%';
+                            if (progress < 1) {
+                                requestAnimationFrame(animateBar);
+                            }
+                        }
+                        requestAnimationFrame(animateBar);
+                    });
+                    animatedBars = true;
+                    obs.unobserve(barsSection);
+                }
+            }, { threshold: 0.3 });
+            barsObserver.observe(barsSection);
+        }
+    });
+
+            // Progress bar scroll indicator
+            window.addEventListener('scroll', function () {
+                const doc = document.documentElement;
+                const scrollTop = doc.scrollTop || document.body.scrollTop;
+                const scrollHeight = doc.scrollHeight - doc.clientHeight;
+                const percent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+                document.getElementById('progress-bar').style.width = percent + '%';
+            });
+  </script>
 </body>
 </html>
