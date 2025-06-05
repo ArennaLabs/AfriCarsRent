@@ -14,15 +14,19 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",            
             "gama":"E",
+            "colores": [
+                "FFFFFF",
+                "999999"
+                
+            ],
             "imagenes": [
                 "./static/img/coches/peugot 208 blanco.jpg"
             ],
             "otros": [
-                "Aire acondicionado",
-                "Seguro",
-                "Climatizador",
-                "Radio",
-                "Techo solar"
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"
             ]   
         },
         {
@@ -39,10 +43,20 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"E",
+            "colores": [
+                "FFFFFF",
+                "999999"
+                
+            ],
             "imagenes": [
                 "./static/img/coches/citroen-c3.jpg"
             ],
-            "otros": ["Aire acondicionado", "Seguro"]   
+            "otros": [                
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"
+            ]   
         },
         {
             "id": "citroenJumpy",
@@ -56,10 +70,19 @@
             "puertas": 3,
             "maletero": "1000L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "colores": [
+                "FFFFFF",
+                "999999"
+                
+            ],
             "imagenes": [
                 "./static/img/coches/citroen-jumpy.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "peugot308",
@@ -74,15 +97,18 @@
             "maletero": "400L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"A",
+            "colores": [
+
+                
+            ],
             "imagenes": [
                 "./static/img/coches/peugot-308.jpg"
             ],
             "otros": [                
-                    "Aire acondicionado",
-                "Seguro",
-                "Climatizador",
-                "Radio",
-                "Techo solar"]
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "citroenC5Aircross",
@@ -95,10 +121,17 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"A",
+            "colores": [
+                "999999"  
+            ],
             "imagenes": [
                 "./static/img/coches/citroen-c5-aircross.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "renaultClio",
@@ -113,10 +146,17 @@
             "maletero": "200L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"E",
+            "colores": [
+                "FFFFFF"
+            ],
             "imagenes": [
                 "./static/img/coches/renault-clio.png"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "volkswagenTaigo",
@@ -132,10 +172,19 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"M",
+            "colores": [
+                "eee8aa ",
+                "CCCCCC",
+                "ffffff"
+            ],
             "imagenes": [
                 "./static/img/coches/volkswagen-taigo-2.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "opelCorsa",
@@ -150,12 +199,20 @@
             "puertas": 5,
             "maletero": "500L",
             "gama":"E",
+            "colores": [
+                "FFFFFF"
+            ],            
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
                 "./static/img/coches/opel-corsa.jpg"
             ],
-            "otros": []
-        },{
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
+        },
+        {
             "id": "fiat500",
             "marca": "Fiat",
             "modelo": "500",
@@ -168,11 +225,18 @@
             "puertas": 5,
             "maletero": "500L",
             "gama":"E",
+            "colores": [
+                "FFFFFF"
+            ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
                 "./static/img/coches/fiat-500-2.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "peugot2008",
@@ -187,12 +251,21 @@
             "puertas": 5,
             "maletero": "500L",
             "gama":"M",
+            "colores": [
+                "dd0000",
+                "AAAAAA"
+            ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
                 "./static/img/coches/peugot-2008.jpg"
             ],
-            "otros": []
-        },{
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
+        },
+        {
             "id": "citroenC4",
             "marca": "Citroen",
             "modelo": "C4",
@@ -205,11 +278,18 @@
             "puertas": 5,
             "maletero": "500L",
             "gama":"M",
+            "colores": [
+                "AAAAAA"
+            ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "imagenes": [
                 "./static/img/coches/citroen-c4.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "volkswagenT-Cross",
@@ -225,10 +305,17 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"M",
+            "colores": [
+                "FFFFFF"
+            ],
             "imagenes": [
                 "./static/img/coches/volkswagen-tcross.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "audiA1",
@@ -244,10 +331,18 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"M",
+            "colores": [
+                "FFFFFF",
+                "000000"
+            ],
             "imagenes": [
                 "./static/img/coches/audi-a1-2.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "citroenberlingo",
@@ -263,10 +358,17 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"M",
+            "colores": [
+                "FFFFFF"
+            ],
             "imagenes": [
                 "./static/img/coches/citroen-berlingo.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "audiq2",
@@ -282,10 +384,17 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"A",
+            "colores": [
+                "FFFFFF"
+            ],
             "imagenes": [
                 "./static/img/coches/aqudi-q2.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "volkswagenTiguan",
@@ -301,10 +410,18 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"A",
+            "colores": [
+                "dd0000",
+                "FFFFFF"
+            ],
             "imagenes": [
                 "./static/img/coches/volkswagen-tiguan.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "renaultTrafic",
@@ -320,10 +437,17 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"M",
+            "colores": [
+            
+            ],
             "imagenes": [
                 "./static/img/coches/renault-trafic.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"]
         },
         {
             "id": "hyundaiI30",
@@ -339,12 +463,18 @@
             "maletero": "500L",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "gama":"M",
+            "colores": [
+                
+            ],
             "imagenes": [
                 "./static/img/coches/hyundai-i30.jpg"
             ],
-            "otros": []
+            "otros": [
+                "Asistencia en carretera 24 horas",
+                "Coche de sustitución",
+                "Mantenimiento",
+                "3.000 KM / Mes  (+0.15 cent / KM extra)"
+            ]
         }  
-        
-
     ]
 }
